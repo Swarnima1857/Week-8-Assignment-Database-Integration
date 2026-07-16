@@ -1,7 +1,7 @@
-### Postman Testing
+# Postman Testing
 
 ---
-### Create Users
+#Create Users
 ## Request
 
 ```json
@@ -152,12 +152,12 @@
 }
 ```
 ---
-### Aggregations
+# Aggregations
 
 ## Unwind Aggregation
 ## $unwind example: break the screens array into individual documents.
 
-# Get/Theaters (Output)
+## Get/Theaters (Output)
 
 ```json
 [
@@ -180,7 +180,7 @@
     }
 ]
 ```
-# Unwind aggregation
+## Unwind aggregation
 
 ```json
 [
@@ -196,7 +196,7 @@
     }
 ]
 ```
-# Get/Shows (Output)
+## Get/Shows (Output)
 
 ```json
 [
@@ -244,7 +244,7 @@
 ```
 # $unwind example: break seat_map into per-seat documents, then group by status.
 
-# Get/shows/{show_id}/available-seats
+## Get/shows/{show_id}/available-seats
 ```json
 [
     {
@@ -257,7 +257,7 @@
     }
 ]
 ```
-# Get/Shows/{show_id}/seat-satats
+## Get/Shows/{show_id}/seat-satats
 ```json
 {
     "show_id": "6a4b934e3ac2189cde989ede",
@@ -269,9 +269,9 @@
     ]
 }
 ```
-## Lookup Aggregation
+# Lookup Aggregation
 
-# Get/bookings (Output)
+## Get/bookings (Output)
 
 ```json
 [
@@ -376,7 +376,7 @@
     }
 ]
 ```
-# Get/reviews/ with-user (Output)
+## Get/reviews/ with-user (Output)
 
 ```json
 [
@@ -415,14 +415,14 @@
     }
 ]
 ```
-## facet Aggregation
+# facet Aggregation
 
-# $facet runs 3 independent aggregations in a SINGLE query:
-# 1. total movie count
-# 2. movie count grouped by genre
-# 3. movie count grouped by language
+## $facet runs 3 independent aggregations in a SINGLE query:
+## 1. total movie count
+## 2. movie count grouped by genre
+## 3. movie count grouped by language
 
-# Get/analytics/movies-dashboard
+## Get/analytics/movies-dashboard
 
 ```json
 {
